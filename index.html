@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de creditos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+<div class="container mt-5">
+    <h1 class="mb-4">Simulador de Créditos</h1>
+    <form id="simuladorForm">
+        <div class="form-group">
+            <label for="monto">Monto del crédito:</label>
+            <input type="number" class="form-control" id="monto" placeholder="Ingrese el monto" required>
+        </div>
+        <div class="form-group">
+            <label for="plazo">Plazo en meses:</label>
+            <input type="number" class="form-control" id="plazo" placeholder="Ingrese el plazo" required>
+        </div>
+        <div class="form-group">
+            <label for="tasa">Tasa de interés (%):</label>
+            <input type="number" class="form-control" id="tasa" placeholder="Ingrese la tasa de interés" required>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo</label required>
+        </div>
+        <button type="button" class="btn btn-primary mt-4" onclick="calcularCuota()">Calcular Cuota</button>
+    </form>
+
+    <div id="resultado" class="mt-2"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
